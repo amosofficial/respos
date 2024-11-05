@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.header .logo {
+    font-size: 1.5em;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.home {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: red;
+    color: #fff;
+}
+
+.home h2 {
+    font-size: 2em;
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+.cta {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: red;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+section {
+    padding: 40px 20px;
+}
+
+.about, .skills, .projects, .contact {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 15px;
+}
+
+.skill-item {
+    padding: 10px;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-item h3 {
+    font-size: 1.2em;
+}
+
+.project-item a {
+    display: inline-block;
+    margin-top: 10px;
+    color: red;
+    text-decoration: none;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    border: none;
+    background-color: red;
+    color: #fff;
+    border-radius: 5px;
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1 class="logo">My Portfolio</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="home">
+        <h2>Hello, I'm AMOS MAINA</h2>
+        <p>Web Developer passionate about designing and building user-centric websites.</p>
+        <img src="https://scontent.fnbo13-1.fna.fbcdn.net/v/t39.30808-6/455777179_428444586898442_3524761277149943644_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeEZMt0X9todbReFQaYtVeIuR5Nxt5RpMQxHk3G3lGkxDNyRKPdyyd6NnKPEHUa6Hsae-vAORORcMkV2KI-MHgu0&_nc_ohc=Uiq8HnJjhroQ7kNvgHjzqbv&_nc_zt=23&_nc_ht=scontent.fnbo13-1.fna&_nc_gid=AGBnN3bdRXDD0PU4riG4AeZ&oh=00_AYBJradQvfUpTXSaZbTdYs0Fzbixod0skBWgk8Gr1o7hdQ&oe=672FA1C2" alt="Your professional photo" class="profile-photo">
+        <a href="#projects" class="cta">View My Work</a>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>Amos is a passionate self-taught web developer from Mount Kenya University with a strong foundation in HTML, CSS, and JavaScript. Driven by curiosity and a commitment to continuous learning, Amos embarked on the journey of web development independently, mastering the essentials of front-end programming. Equipped with both academic knowledge and hands-on skills, Amos thrives on building interactive, user-friendly websites and is constantly exploring new technologies to expand his expertise. His dedication and proactive approach make him a valuable asset in the tech world, always ready to tackle new challenges and deliver creative digital solutions.</p>
+        <p>Education: MOUNT KENYA UNIVERSITY, BACHELOR OF INFORMATION TECHNOLOGY</p>
+        <p>Experience: FREELANCER AT UPWORK AND FIVERR</p>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item">HTML</div>
+            <div class="skill-item">CSS</div>
+            <div class="skill-item">JavaScript</div>
+            <div class="skill-item">React</div>
+            <div class="skill-item">Node.js</div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-item">
+                <h3>AFFLUENT FARMERS</h3>
+                <p>CREATED AFFLUENT FARMERS USING HTML ,CSS AND JAVASCRIPT</p>
+                <a href="https://affluentfarmers.vercel.app/" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="POST" class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
